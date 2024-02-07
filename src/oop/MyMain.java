@@ -11,6 +11,7 @@ public class MyMain {
         ArrayList<String> employees = getEmployees();                 //получаем все элементы коллекции
         employees.add("James");                                 // добавляем сотрудника
         employees.remove("Olivia");                         // Удаляем сотруника
+        employees.remove(0);
         for (String employee : employees) {                    // пока I меньше size
             System.out.println(employee);                      // мы выводим в консоль экземпляр нашей коллекции
         }
