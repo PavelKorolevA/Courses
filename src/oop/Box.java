@@ -24,6 +24,10 @@ public class Box {
         this(size,size,size);
     }
 
+    public void showInfo() {
+        System.out.println("Width: " + width + " Length: " + length + " Height: " + height);
+    }
+
     public int compare(Box another) {
         double currentVolume = getVolume();
         double anotherVolume = another.getVolume();
