@@ -1,8 +1,6 @@
 package test;
 
 import Inheritans.*;
-import oop.Box;
-import oop.WeightBox;
 
 public class MainMain {
 
