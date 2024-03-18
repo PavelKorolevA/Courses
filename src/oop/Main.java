@@ -1,5 +1,7 @@
 package oop;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -67,6 +69,7 @@ public class Main {
 
 //        System.out.println(MayMath.length(10));
 
-        System.out.println(MayMath.sum(2, 2, 0, 8));
+//        System.out.println(MayMath.sum(2, 2, 0, 8));
+
     }
 }
