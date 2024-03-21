@@ -1,4 +1,4 @@
-package MyFirstJava;
+package myFirstJava;
 
 public class PhraseOMatic {
 

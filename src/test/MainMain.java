@@ -1,6 +1,6 @@
 package test;
 
-import Inheritans.*;
+import inheritans.*;
 
 public class MainMain {
 

@@ -1,4 +1,4 @@
-package Inheritans;
+package inheritans;
 
 public class Triangle extends Shape {
 

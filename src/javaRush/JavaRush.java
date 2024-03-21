@@ -1,10 +1,10 @@
 package javaRush;
 
-import java.awt.*;
+import javax.swing.plaf.nimbus.AbstractRegionPainter;
 import java.util.Scanner;
 
 public class JavaRush {
-    public static int [] strings = new int[] {1, 2, 3, 4, 5};
+
     public static void main(String[] args) {
 
 //        В этой задаче нужно:
@@ -58,12 +58,131 @@ public class JavaRush {
 //            System.out.println(strings[i]);
 //        }
 
-        int x = 100;
-        int y = 1000;
-        for (int i = 0; i < x| i > y; i++) {
-            if ((i % 2) == 0) {
-                System.out.println(i);
+
+//        У вас есть переменные x1, x2, x3, которые содержат входные пользовательские данные.
+//        Напишите код, который находит максимальное и минимальное число из x1, x2, x3 и записывает результат в переменную result.
+
+//        int x1, x2, x3;
+//        String result;
+//        int min;
+//        int max;
+//
+//        int[] inputValues = readInput();
+//        x1 = inputValues[0];
+//        x2 = inputValues[1];
+//        x3 = inputValues[2];
+//        min = x1;
+//        min = Math.min(min, x2);
+//        min = Math.min(min, x3);
+//        max = x1;
+//        max = Math.max(max, x2);
+//        max = Math.max(max, x3);
+//        result = "минимальное: " + min + ", максимальное: " + max;
+//
+//        System.out.println(result);
+//    }
+//
+//    public static int[] readInput() {
+//        int[] inputValues = new int[3];
+//
+//        Scanner scanner = new Scanner(System.in);
+//        if (scanner.hasNextLine()) {
+//            String input = scanner.nextLine();
+//            String[] values = input.split(" ");
+//            for (int i = 0; i < 3; i++) {
+//                inputValues[i] = Integer.parseInt(values[i]);
+//            }
+//        }
+//        scanner.close();
+//
+//        return inputValues;
+
+
+
+//        У вас есть переменная stars, которая содержит входные пользовательские данные.
+//
+//        Значение переменной stars от 1 до 5.
+//
+//        1 — ★
+//        2 — ★★
+//        3 — ★★★
+//        4 — ★★★★
+//        5 — ★★★★★
+//
+//        Напишите код, который проверяет значение переменной stars и записывает результат в переменную result.
+
+//        int stars = readInput();
+//        String result;
+//        switch (stars) {
+//            case (1):
+//                result = "★";
+//                System.out.println(result);
+//                break;
+//            case (2):
+//                result = "★★";
+//                System.out.println(result);
+//                break;
+//            case (3):
+//                result = "★★★";
+//                System.out.println(result);
+//                break;
+//            case (4):
+//                result = "★★★★";
+//                System.out.println(result);
+//                break;
+//            case (5):
+//                result = "★★★★★";
+//                System.out.println(result);
+//                break;
+//        }
+//    }
+//
+//    public static int readInput() {
+//        int stars = 0;
+//
+//        Scanner scanner = new Scanner(System.in);
+//        if (scanner.hasNextLine()) {
+//            stars = Integer.parseInt(scanner.nextLine());
+//        }
+//        scanner.close();
+//
+//        return stars;
+
+
+
+//        У вас есть переменные x, y и direction которые содержат входные пользовательские данные.
+//
+//                x, y содержат числа - стартовая позиция игрока.
+//
+//        direction содержит направление движения, одного из: up, down, left, right.
+//        Напишите код, который высчитывает новую позицию игрока после перемещения в этом направлении на 1 и записывает результат в переменную result
+
+        int x, y;
+        String direction, result;
+        String down, up, left, right;
+
+        String[] inputValues = readInput();
+        x = Integer.parseInt(inputValues[0]);
+        y = Integer.parseInt(inputValues[1]);
+        direction = inputValues[2];
+
+        result = "x: " + x + ", y: " + y + ", direction: " + direction;
+        System.out.println(result);
+    }
+
+    public static String[] readInput() {
+        String[] inputValues = new String[3];
+
+        Scanner scanner = new Scanner(System.in);
+        if (scanner.hasNextLine()) {
+            String input = scanner.nextLine();
+            String[] values = input.split(" ");
+            for (int i = 0; i < 3; i++) {
+                inputValues[i] = values[i];
             }
         }
+        scanner.close();
+
+        return inputValues;
     }
 }
