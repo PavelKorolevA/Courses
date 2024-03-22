@@ -25,4 +25,10 @@ public class Human {
     public int getAge() {
         return age;
     }
+
+    @Override
+    public String toString() {
+       // return "Name: " + name + " Age: " + age;
+        return String.format("Name %s Age %s", name, age);
+    }
 }
