@@ -17,14 +17,21 @@ public class Main {
 //        Создайте программу, которая бросит исключение, которая пишется так ArrayIndexOutOfBoundsException.
 //        И обработать это исключение в блоке try catch.
 
-        int [] numbers = {1, 2, 3, 4, 5};
-        try {
-            for (int i = numbers.length; true; i--) {
-                System.out.println(numbers[i]);
-            }
-        } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("Вышли за предел массива");
-        }
+//        int [] numbers = {1, 2, 3, 4, 5};
+//        try {
+//            for (int i = numbers.length; true; i--) {
+//                System.out.println(numbers[i]);
+//            }
+//        } catch (ArrayIndexOutOfBoundsException e) {
+//            System.out.println("Вышли за предел массива");
+//        }
 
+        try {
+            int a = 0;
+            int b = 17 / a;
+            System.out.println("Result: 0");
+        } catch (NullPointerException e) {
+            System.out.println("Division by zero");
+        }
     }
 }
