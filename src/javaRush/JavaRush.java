@@ -1,9 +1,6 @@
 package javaRush;
 
-import javax.swing.plaf.nimbus.AbstractRegionPainter;
 import java.util.*;
-import java.time.DateTimeException;
-import java.time.LocalDate;
 
 public class JavaRush {
     public static void main(String[] args) {
@@ -467,12 +464,69 @@ public class JavaRush {
 //                Марк Цукерберг, Билл Гейтс. Чтобы получить допуск, нужно сказать фразу-приветствие.
 //                Если фраза-приветствие содержит имя из списка, проход разрешается. Если же нет - проход блокируется.
 //
-//                На ввод подаётся фраза-приветствие. Выведите "Добро пожаловать!", е
-//        сли имя есть в списке, и "Здесь никого нет, Вы ошиблись дверью" - если нет.
+//                На ввод подаётся фраза-приветствие. Выведите "Добро пожаловать!",
+//                если имя есть в списке, и "Здесь никого нет, Вы ошиблись дверью" - если нет.
 //
 //                Примечание. Буква "ё".
 
 
+//        Scanner sc = new Scanner(System.in);
+//        String phrase = sc.nextLine();
+//        String geff = "Джефф Безос";
+//        String ilon = "Илон Маск";
+//        String mark = "Марк Цукерберг";
+//        String bill = "Билл Гейтс";
+//        if (phrase.contains(geff) || phrase.contains(ilon) || phrase.contains(mark) || phrase.contains(bill)) {
+//            System.out.println("Добро пожаловать!");
+//        }  else {
+//            System.out.println("Здесь никого нет, Вы ошиблись дверью");
+//        }
 
+
+//        На вход подаётся слово. Выведите словами количество букв в этом слове. Если букв больше пяти - выведите "Длинное слово".
+
+//        Scanner sc = new Scanner(System.in);
+//        String stroka = sc.nextLine();
+//        int lettersCount = 0;
+//        for (int i = 0; i < stroka.length(); i++) {
+//            if (Character.isAlphabetic(stroka.charAt(i))) {
+//                lettersCount++;
+//            }
+//        }
+//        switch (lettersCount) {
+//            case (1): {
+//                System.out.println("Одна буква");
+//                break;
+//            }
+//            case (2): {
+//                System.out.println("Две буквы");
+//                break;
+//            }
+//            case (3): {
+//                System.out.println("Три буквы");
+//                break;
+//            }
+//            case (4): {
+//                System.out.println("Четыре буквы");
+//                break;
+//            }
+//            case (5): {
+//                System.out.println("Пять букв");
+//                break;
+//            }
+//            default: {
+//                System.out.println("Длинное слово");
+//            }
+//        }
+
+
+//        На вход подаётся натуральное число n. Выведите на печать числа от единицы до введённого числа включительно, каждое на новой строке.
+
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int y = 1;
+        while (n >= y) {
+            System.out.println(y++);
+        }
     }
 }
