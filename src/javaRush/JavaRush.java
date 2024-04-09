@@ -1,5 +1,8 @@
 package javaRush;
 
+import org.jetbrains.annotations.TestOnly;
+import org.junit.jupiter.api.Test;
+
 import java.util.*;
 
 public class JavaRush {
@@ -522,11 +525,63 @@ public class JavaRush {
 
 //        На вход подаётся натуральное число n. Выведите на печать числа от единицы до введённого числа включительно, каждое на новой строке.
 
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
+//        int y = 1;
+//        while (n >= y) {
+//            System.out.println(y++);
+//        }
+
+
+//        На ввод подаётся натуральное число n. Выведите на печать в возрастающем порядке через пробел квадраты натуральных чисел, если эти квадраты не превышают n.
+
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
+//        int squareOfTheNumber = 1;
+//        while (n >= (squareOfTheNumber * squareOfTheNumber)) {
+//            System.out.print(squareOfTheNumber * squareOfTheNumber++ + " ");
+//        }
+
+
+
+//        Считайте со ввода последовательность целых чисел. Последовательность оканчивается числом 0.
+//        Выведите на печать сумму введённых чисел.
+
+//          Scanner sc = new Scanner(System.in);
+////          int sum = 0;
+////          while (true) {
+////              int userInput = sc.nextInt();
+////              if (userInput != 0){
+////                  sum += userInput;
+////              } else {
+////                  break;
+////              }
+////          }
+////        System.out.println(sum);
+
+
+//        На вход подаётся последовательность слов. Посчитайте общее количество введённых слов.
+//                Примечание. Так как маркер конца последовательности в этой задаче отсутствует, будет удобно
+//        воспользоваться методом hasNext(). Найдите самостоятельно, как он работает.
+
+//        Scanner sc = new Scanner(System.in);
+//        int count = 0;
+//        while (sc.hasNext()){
+//            sc.next();
+//            count++;
+//        }
+//        System.out.println(count);
+
+
+//        На вход подаются числа, которые делятся на 11. Концом последовательности будет любое число, не делящееся на 11 (это число не входит в последовательность).
+//        Посчитайте количество введённых чисел и сумму тех из них, которые кратны 3.
+
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int y = 1;
-        while (n >= y) {
-            System.out.println(y++);
+        int userInput = sc.nextInt();
+        int sum = 0;
+        int count = 0;
+        while ((userInput % 11) == 0) {
+            
         }
     }
 }
